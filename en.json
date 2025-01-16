@@ -1,0 +1,1107 @@
+{
+  "website": { "subtitle": "Resilience Checker", "searchBar": "Search Address......" },
+  "cityNames": {
+    "zhytomyr": "Zhytomyr",
+    "kryvyiRih": "Kryvyi Rih",
+    "nikopol": "Nikopol",
+    "dnipro": "Dnipro",
+    "sumy": "Sumy"
+  },
+  "layerNames": {
+    "shelter": "Shelters",
+    "vulnerability": "Vulnerability",
+    "boundary": "Boundary",
+    "isochrone": "Shelters' Isochrone (Pedestrian)",
+    "population": "Shelter Access (Pedestrian): Population within/outside 5 min",
+    "healthSitePoint": "Health Sites",
+    "healthSiteIsochrone": "Health Sites' Isochrones",
+    "healthSitePopulation": "Health Site Access (Car): Population within/outside 10 min",
+    "waterSource": "Water Source (fake)",
+    "waterSourceCatchment": "Catchment Area of water source",
+    "waterSourcePopulation": "Catchment area of Water Source: Population within/outside a certain kilometers according to the transport network",
+    "energySupply": "Energy Plant (fake)",
+    "energySupplyCatchment": "Catchment area of Energy Plant: Population within/outside a certain kilometers according to the transport network"
+  },
+  "legend": {
+    "title": "Legend",
+    "isochrone": {
+      "shelter": "Shelters' Isochrone ",
+      "healthSite": "Health Site Isochrone - ",
+      "water": "Water Source Catchment Area ",
+      "energy": "Energy Supply Catchment Area "
+    },
+    "minute": "min",
+    "kilometer": "km",
+    "vulnerability": {
+      "alarm": "Alarm Hours",
+      "size": "The more population, the larger the vulnerability dot."
+    },
+    "population": {
+      "accessible": "Accessible",
+      "population": "Population",
+      "text": "Most populated areas but not in the Catchment/Isochrone area"
+    }
+  },
+  "sidebar": {
+    "introductionPanel": {
+      "header": "Introduction",
+      "description": {
+        "title": "What is ARTUR?",
+        "text": "ARTUR is a project focused on urban resilience and planning support, for Ukrainian cities. It compiles a toolkit including this prototype tool, designed for city officials such as disaster planners, spatial planners, and advisors to city councils. These experts can consult clear information to make decisions that protect their cities and accelerate recovery efforts."
+      },
+      "usage": {
+        "title": "How ARTUR helps cities to become more resilient",
+        "subtitle": "ARTUR...",
+        "list": [
+          "explains what resilience means, and which concepts are important",
+          "provides an overview of the vulnerability state of the region at national level",
+          "enables the measuring of city resilience in a segregated manner",
+          "offers cartographic tools to visualise and communicate areas of attention",
+          "provides a step-by-step guidelines as recommendations for targeted planning of countermeasures"
+        ]
+      }
+    },
+    "dictionaryPanel": {
+      "title": "Urban Resilience Dictionary",
+      "content": {
+        "title": "Urban Resilience",
+        "subtitle": {
+          "definition": "Definition",
+          "access": "How can it be assessed",
+          "phase": "For which phase of development"
+        },
+        "description": {
+          "definition": "The ability of an urban system and all its constituent socio-ecological and socio-technical networks across temporal and spatial scales to maintain or rapidly return to desired functions in the face of a disturbance, to adapt to change, and to quickly transform systems that limit current or future adaptive capacity (Meerow et al., 2016). How can it be assessed: The following 9 characteristics are considered indispensable capacities of an urban system to be resilient. Thus, by evaluating the intrinsic capacities of a resilient system, how balanced they are, or which are not performing well, city actors can evaluate in which direction to take decisions toward development. Our framework links these 9 resilience capacities to specific dimensions of the urban system, and corresponding indicators.",
+          "access": "The following 9 characteristics are considered indispensable capacities of an urban system to be resilient. Thus, by evaluating the intrinsic capacities of a resilient system, how balanced they are, or which are not performing well, city actors can evaluate in which direction to take decisions toward development. Our framework links these 9 resilience capacities to specific dimensions of the urban system, and corresponding indicators.",
+          "phase": [
+            "Resilience can be understood as a constantly changing state of a system. In this sense it can be assessed and monitored periodically at different stages of development.",
+            "This is especially important when considering as part of the theoretical framework, that systems under pressure or failure return to a stable state, through the phases of: 1) recovery, 2) adaptation and 3) transformation.",
+            "The 9 considered capacities of a resilient urban system can, in this sense, relate more strongly to a certain phase, whether it is more relevant to assess in the short-term (recovery), in the mid-term (adaptation) or in the long-term (transformation)."
+          ]
+        },
+        "capacities": {
+          "class": {
+            "1": "During recovery (short-term)",
+            "2": "During adaptation (mid-term)",
+            "3": "During transformation (long-term)"
+          },
+          "title": {
+            "definition": "Definition",
+            "practice": "Best Practices in the Urban Form",
+            "example": "Examples for the case of Ukrainian Cities:"
+          },
+          "Robustness": {
+            "definition": "Property of being strong in its constitution. Ability to tolerate disturbances without collapsing the rest of the system, despite the frequency and complexity of triggering factors. They are self-sufficient parts of the system in an emergency and overcome crises independently.",
+            "practice": [
+              "Resistant new building infrastructure (anti-seismic, flood-resistant)",
+              "Multiple and redundant water and energy supply",
+              "Compact and well-connected neighborhoods",
+              "Transport network with multiple and alternative routes",
+              "Green infrastructure integrated into the urban form to reduce environmental stresses"
+            ],
+            "example": {
+              "type": "list",
+              "data": [
+                "Distributed and decentralized energy systems to prevent widespread blackouts.",
+                "Public spaces which are also water storage basins for storm events.",
+                "Having redundant and decentralized utility supply stations, while also pairing them with dependent services (electricity, water and heating) to close locations to avoid disruptions in distant distribution networks.",
+                "Capable of receiving IDPs. Underground spaces",
+                "Dispersal of critical infrastructure facilities.",
+                "Decentralisation in general (of services, of crowds, of resources, of economy)."
+              ]
+            }
+          },
+          "Redundancy": {
+            "definition": "The same function or part of the system is provided multiple times, so that spare capacities (areas and infrastructures) are kept free to be able to react to unforeseeable risks and are accessible if needed.",
+            "practice": [
+              "Having a backup systems for utilities (water, energy, heat, transport)",
+              "Having alternate pathways for transport systems."
+            ],
+            "example": {
+              "type": "list",
+              "data": [
+                "Having a backup systems for utilities (water, energy, heat, transport)",
+                "Having alternate pathways for transport systems.",
+                "Having multiple sources of power, e.g. solar, hydroelectric, gas.",
+                "Underground sources of distribution e.g. Gas is less fragile than solar panels due to bombings.",
+                "Proximity of utility sources to avoid disruptions by longer distances of distributions."
+              ]
+            }
+          },
+          "Inclusiveness": {
+            "definition": "Social: the capacity of people to respond together, to change any disturbance, will depend on its social capital.\nPhysical: considering ecological engineering, as a means to predict, design, construct or restore, and manage ecosystems that integrate \"human society with its natural environment for the benefit of both\".",
+            "practice": [
+              "Social: mixed-use developments, shared courtyards, public spaces designed with accessibility in mind (ramps, tactile paths), local community hubs and centers, public libraries, more public spaces.",
+              "Physical: ecological urbanism as a principle where the urban design is defined by the natural elements intrinsic to its fabric."
+            ],
+            "example": {
+              "type": "grouped",
+              "data": {
+                "Social": [
+                  "Public space appropriate for people with disabilities after war.",
+                  "Local community hubs and centers."
+                ],
+                "Physical": [
+                  "Physical infrastructure thought as multi-purpose use, program (e.g. housing units are thought as combined with educational, cultural or recreational spaces for higher social cohesion).",
+                  "Design based on the pre-existence of water bodies, green reservoirs, topography, without cancelling the natural environment in the urban plans.",
+                  "Consideration of the geographical condition of cities (closeness to water as a resource)",
+                  "Ensuring a balance in land-use planning (housing, agriculture, industry)"
+                ]
+              },
+              "group": { "Social": "Social", "Physical": "Physical" }
+            }
+          },
+          "Diversity": {
+            "definition": "A major source of future options. The more diversity, the better the capacity of a system to adapt to a wide range of different and unpredictable circumstances (Walker & Salt, 2006).",
+            "practice": [
+              "Mixed use",
+              "Multi-functional spaces",
+              "Short blocks",
+              "Variety of buildings' age and density",
+              "Spatial heterogeneity"
+            ],
+            "example": {
+              "type": "list",
+              "data": [
+                "Level of diversity in land-use types per District, within the city (e.g. need for large spaces for alternative use in the case of an emergency, such as a sport hall for sheltering)",
+                "Parks which are also water collection basins",
+                "Local economic diversity",
+                "Diversification of energy, water and heat supply sources.",
+                "A diversified public transport system (in distribution and modes)"
+              ]
+            }
+          },
+          "Integration": {
+            "definition": "The ability of different systems, sectors, and stakeholders within a city to work together cohesively to address challenges,  collaborate across social, economic, environmental, and governance dimensions and to create a unified approach to anticipate, respond and recover from stresses and shocks.",
+            "practice": [
+              "Physical: intermodal transportation, mixed-use districts, new districts closer to BRT lines, green-blue infrastructure, integration of utilities with urban design, smart city integration",
+              "Social / Institutional: cross-sectoral collaboration, multi-level governance, bottom-up approaches in local governance, policies based on systems thinking."
+            ],
+            "example": {
+              "type": "grouped",
+              "data": {
+                "Physical": [
+                  "Interconnected transport networks",
+                  "Making sure isolated communities are considered in the planning",
+                  "Under and above ground connectivity in cities.",
+                  "Built and natural spaces integrated for mental health and efficiency of space. ",
+                  "Accessibility in cities, meaning short distances, enhancing pedestrian movement.",
+                  "Improved navigation and alerts."
+                ],
+                "Social": [
+                  "Community integrated into local planning decisions.",
+                  "Local knowledge collection for empowerment of the population and sense of belonging (to prevent shrinking cities).",
+                  "Cohesive emergency operations."
+                ]
+              },
+              "group": { "Social": "Social", "Physical": "Physical" }
+            }
+          },
+          "Transparency": {
+            "definition": "Clear, open, and accessible communication of information about risks, decisions, policies, and actions, ensuring that all stakeholders—including residents, governments, and organizations—understand and can participate in resilience-building processes. Transparency fosters trust, accountability, and collaboration, which are essential for effective urban resilience.",
+            "practice": [
+              "Informing the population to raise awareness.",
+              "Institutional accountability for expenditures and investments on urban development."
+            ],
+            "example": {
+              "type": "list",
+              "data": [
+                "Informed population in measures such as energy saving.",
+                "Institutional accountability for expenditures and investments on urban recovery.",
+                "Informed population on emergency measures in their own cities.",
+                "Improved navigation, alerts and early warning systems.",
+                "Ensuring access to information to more vulnerable population (elderly, single parents, people suffering from digital divide)."
+              ]
+            }
+          },
+          "Resourcefulness": {
+            "definition": " The capacity of a city to effectively hold, mobilize, manage, and allocate resources to respond to, recover from, and adapt to shocks and stresses.",
+            "practice": [
+              "Mobilising human resources effectively (emergency operators)",
+              "Capacity to acquire and mobilise financial funds",
+              "Proper administration of natural resources, as renewable energy generation resources, water reservoirs, or public space for mental health of the population"
+            ],
+            "example": {
+              "type": "grouped",
+              "data": {
+                "Resourcefulness of space": [
+                  "Capacity to set-up additional sheltering infrastructure for displaced people.",
+                  "Using parks as water storage basins.",
+                  "Re-using leftover materials from destroyed building and structures.",
+                  "Having well conditioned underground space."
+                ],
+                "Resourcefulness of human capital": [
+                  "Having a population with a high level of awareness and capacity to react to an emergency.",
+                  "Having storage capacity of energy sources for several days.",
+                  "Support of small, local businesses."
+                ]
+              },
+              "group": {
+                "Resourcefulness of space": "Resourcefulness of space",
+                "Resourcefulness of human capital": "Resourcefulness of human capital"
+              }
+            }
+          },
+          "Reflectiveness": {
+            "definition": "An urban framework or mechanism that actively learns from past experiences, anticipates future challenges, and adapts its structures, policies, and behaviors accordingly to improve resilience. It integrates feedback loops, collective learning, and adaptive strategies to ensure its capacity to respond to and recover from stresses and shocks.",
+            "practice": [
+              "Existence of campaigns informing about awareness.",
+              "Engaged local research institutions combined with local planners to think ahead in view of climate uncertainty.",
+              "Agile urban planning."
+            ],
+            "example": {
+              "type": "list",
+              "data": [
+                "Learning from peer cities in the region about recovery measures, ensuring proper communication to its citizens.",
+                "Learning from history of European cities facing war.",
+                "Capable of having flexible planning measures in view of uncertainty of war.",
+                "Taking advantage of higher influx of funding into the country to plan for a new reconstruction (build back better motto).",
+                "Planning proper evacuation plans from previous experiences."
+              ]
+            }
+          },
+          "Flexibility": {
+            "definition": "(adapted from variability) embrace flexibility rather than attempting to control or reduce it (Walker & Salt, 2006). / a flexible system can change and evolve against changing circumstances.",
+            "practice": [
+              "Street layouts with frequent intersections for re-routing",
+              "Adaptive land-use",
+              "Modular or incremental housing design",
+              "Multi-functional spaces",
+              "Infrastructure accommodating evolving technologies or capacities without needing complete replacement (wireless tech)"
+            ],
+            "example": {
+              "type": "list",
+              "data": [
+                "Interchangeability: buildings capable of holding an alternative temporary use (shelters for IDP).",
+                "Additional infrastructure adaptable as healthcare facilities in emergencies.",
+                "Capacity to assemble quickly additional sheltering for unexpected IDP.",
+                "Multifunctional use of buildings.",
+                "Transformable design.",
+                "Building new infrastructure with consideration of evolving technologies without needing complete replacement (e.g. wireless tech)."
+              ]
+            }
+          }
+        },
+        "button": "Click here to explore relatable indicators"
+      }
+    },
+    "indicatorPanel": {
+      "header": "Dashboard",
+      "indicator": "Indicators",
+      "graph": "Graphs of Indicators",
+      "list": "List of Indicators",
+      "result": "Resilience Score",
+      "button": {
+        "graph1": "Basic Indicators",
+        "graph2": "All indicators"
+      },
+      "questionnaire": {
+        "title": "Questionnaire",
+        "buttons": { "submit": "Submit", "close": "Close" },
+        "warning": "Please answer all the questions!"
+      },
+      "radarChart": {
+        "name": {
+          "dimension": "Resilience Score by Dimensions",
+          "total": "Resilience Score: Essential Indicators"
+        },
+        "type": { "dimension": "By Dimensions", "total": "Total" },
+        "social": "Social",
+        "economic": "Economic",
+        "institutional": "Institutional",
+        "physical": "Physical"
+      }
+    },
+    "dataPanel": {
+      "header": "Layers",
+      "close": "Close",
+      "control": {
+        "header": "Layer Control",
+        "basemaps": "Basemaps",
+        "overlays": "Overlays"
+      },
+      "sets": {
+        "shelter": "Layer Set: Shelter",
+        "healthSite": "Layer Set: Health Site",
+        "waterSource": "Layer Set: Water Source",
+        "energySupply": "Layer Set: Energy Supply"
+      },
+      "popups": {
+        "sheltersInfo": "Shelters Information",
+        "shelterPopulationInfo": "Shelter Access Population Information",
+        "healthSitePopulationInfo": "Health Site Access Population Information",
+        "waterSourcePopulation": "Water Source Catchment Area Population"
+      },
+      "healthSiteIsochroneType": {
+        "label": "select isochrone type",
+        "auto": "Car",
+        "bus": "Bus",
+        "bicycle": "Bicycle",
+        "pedestrian": "Pedestrian"
+      },
+      "populationChartText": {
+        "shelterAccess": "Accessible in 5 min",
+        "shelterInaccess": "Inaccessible in 5 min",
+        "healthSiteAccess": "Accessible in 10 min",
+        "healthSiteInaccess": "Inaccessible in 10 min",
+        "waterSourceAccess": "In Catchment Area",
+        "waterSourceInaccess": "Out of Catchment Area"
+      }
+    },
+    "settingsPanel": {
+      "header": "Settings",
+      "step1": {
+        "title": "Step 1",
+        "content": "Please select your city:",
+        "selectDefault": "Select a city"
+      },
+      "step2": {
+        "title": "Step 2",
+        "content": "From the identified types of challenges in this city, please select the one you would like to consult. Afterwards, click ",
+        "selectDefault": "Select a topic"
+      },
+      "step3": {
+        "title": "Step 3",
+        "content": "Please open the dashboard and then select one type of disruption in the top diagram to evaluate in the map. Afterwards, click ",
+        "tableHeaders": {
+          "diagnoseDashboard": "First Diagnose Dashboard",
+          "city": "City:",
+          "challenge": "Challenge:",
+          "summary": "Summary:"
+        },
+        "summary": {
+          "water": "Water provision is challenged by multiple factors, affecting collection, distribution, sanitation measures. In the following diagrams the specific types of threats are explained.",
+          "energy": "Energy provision is challenged by various factors, including supply and demand disruptions."
+        }
+      }
+    },
+    "analysisDashboard": {
+      "open": "Open Dashboard",
+      "challenge": "Challenge",
+      "disruption_types": "Disruption Types:",
+      "water_supply_chain": "Water supply chain",
+      "affected_urban_resilience_capacities": "Affected Urban Resilience Capacities",
+      "navigate_to_the_map": "Navigate to the map",
+      "go_to_layer_set": "Go to Water Source Layer Set",
+      "other_components": "Other Affected Components in the Urban System",
+      "download": "Download"
+    },
+    "buttons": {
+      "goToStep1": " Go to Step 1",
+      "back": " Back",
+      "next": " Next",
+      "goToLayerControl": " Go to Layer Control"
+    },
+    "topics": {
+      "water": "Water",
+      "energy": "Energy",
+      "evacuation": "Evacuation",
+      "heating": "Heating",
+      "ecology": "Ecology",
+      "physicalSafety": "Physical Safety"
+    }
+  },
+  "indicatorChart": {
+    "buttons": {
+      "download": " Download Chart",
+      "switch": " View"
+    },
+    "modal": {
+      "title": "Download Options",
+      "resolution": "Resolution (Pixel Ratio):",
+      "color": "Background Color:",
+      "format": "Image Format:"
+    },
+    "graphTypes": {
+      "sankey": "Sankey Graph",
+      "sunburst": "Sunburst Graph"
+    }
+  },
+  "echarts": {
+    "name": "Urban Resilience",
+    "social": {
+      "name": "SOCIAL",
+      "1": {
+        "name": "Basic necessities",
+        "1": "Safe and affordable housing",
+        "2": "Adequate affordable energy supply",
+        "3": "Inclusive access to safe drinking water",
+        "4": "Effective sanitation",
+        "5": "Sufficient affordable food supply"
+      },
+      "2": {
+        "name": "Capacity building and public awareness",
+        "1": "Access to all the skills and experience to respond/reduce risks and respond to disaster",
+        "2": "Accessibility to training materials (language)",
+        "3": "Exchange knowledge and learn from other cities facing similar challenges"
+      },
+      "3": {
+        "name": "Community support",
+        "1": "Grassroots or community organizations participating in pre-event planning and post event response",
+        "2": "Accessible criminal and civil justice",
+        "3": "Cohesive communities",
+        "4": "Training programmes provided to the most vulnerable and at need populations",
+        "5": "Citizen engagement and communications in relation to disaster resilience and recovery",
+        "6": "Widespread community awareness & preparedness",
+        "7": "Main public facilities: university, schools, health centres, markets, etc.",
+        "8": "Social services infrastructure, including schools, hospitals, and clinics",
+        "9": "Local community support",
+        "10": "Strong city-wide identity & culture",
+        "11": "Actively engaged citizens",
+        "12": "Practices and drills involving public and professionals",
+        "13": "Adequate education for all",
+        "14": "Major community buildings, religious buildings, and historic/cultural assets",
+        "15": "Relevant skills & training"
+      },
+      "4": {
+        "name": "Ecosystem Services",
+        "1": "Awareness of ecosystem services being provided to the city from natural capital beyond its administrative borders",
+        "2": "Awareness of functions or services that natural capital provides for the city"
+      },
+      "5": {
+        "name": "Planning Resilience",
+        "1": "Public education towards awareness of hazard, risk and disaster information",
+        "2": "Safe places/havens and the evacuation routes",
+        "3": "Risk and resilience training to all sectors of the city including government, business, NGOs and community",
+        "4": "Awareness of equipment and supply needed + provision"
+      },
+      "6": {
+        "name": "Security services",
+        "1": "Effective systems to deter crime",
+        "2": "High levels of crime are observed."
+      }
+    },
+    "economic": {
+      "name": "ECO-\nNOMIC",
+      "1": {
+        "name": "Economic activities",
+        "1": "Diverse economic base",
+        "2": "Industrial areas including ports, industrial zones, and factories",
+        "3": "Supportive financing mechanisms",
+        "4": "Economic facilities (banks, business centres, shopping malls, markets, etc.)"
+      },
+      "2": {
+        "name": "Economic Impact",
+        "1": "Businesses with a documented business continuity plan",
+        "2": "Knowledge to funding opportunities (for local economy and recovery)",
+        "3": "Attractive business environment",
+        "4": "Economic impact",
+        "5": "Level of insurance cover exists in the city, across all sectors - business and community",
+        "6": "Incentives for business and society to support resilience building",
+        "7": "Planned investments",
+        "8": "Comprehensive business continuity planning",
+        "9": "Inclusive labour policies",
+        "10": "Local business development and innovation",
+        "11": "Strong integration with regional & global economies",
+        "12": "Economic activities, including commercial zones, central business districts, hotels, and tourist facilities"
+      },
+      "3": {
+        "name": "Planning Resilience",
+        "1": "Financial plan and budget for resilience, including contingency funds",
+        "2": "Projected changes to population densities and economic activity",
+        "3": "Densities"
+      },
+      "4": {
+        "name": "Governance",
+        "1": "Changes in the overall city's boundaries"
+      }
+    },
+    "institutional": {
+      "name": "INSTI-\nTUTIONAL",
+      "1": {
+        "name": "Governance",
+        "1": "Disaster management authority have sufficient staffing capacity",
+        "2": "Consultative planning process",
+        "3": "Informal development areas",
+        "4": "Robust planning approval process",
+        "5": "Well-managed public finances",
+        "6": "Appropriate government decision-making",
+        "7": "Effective co-ordination with other government bodies",
+        "8": "Proactive multi-stakeholder collaboration",
+        "9": "Is there a multi-agency/sectoral mechanism with appropriate authority and resources to address disaster risk reduction?",
+        "10": "Urban development to promote resilience",
+        "11": "Building codes or standards address hazards and risks",
+        "12": "Enforcement and verification of zoning building zoning and regulations",
+        "13": "FAIR Data sharing to enhance resilience",
+        "14": "Plan for post-event recovery and reconstruction, including economic reboot, societal aspects",
+        "15": "Proactive corruption prevention",
+        "16": "Comprehensive city monitoring & data management"
+      },
+      "2": {
+        "name": "Land use",
+        "1": "Land use designations",
+        "2": "Changes in land use designations"
+      },
+      "3": {
+        "name": "Planning for risk and disaster",
+        "1": "Disaster and risk reduction in urban planning instruments according to Sendai framework",
+        "2": "Vulnerability mapping and monitoring (vulnerable groups and assets, disaster scenario analysis)",
+        "3": "Do post-event assessment processes incorporate failure analyses and the ability to capture lessons learned that then feed into design and delivery of rebuilding projects?",
+        "4": "Early warning system and reaching level",
+        "5": "Comprehensive government emergency management",
+        "6": "Integration of resilience in city functions / portfolios",
+        "7": "Emergency operations centre: interoperability and inter-agency implementation and coordination",
+        "8": "Disaster management / preparedness / emergency response plan",
+        "9": "Appropriate land use and zoning",
+        "10": "Appropriately land use planning considering risk, hazards and vulnerability",
+        "11": "Locate the various administrative/government buildings in your city, including at the neighbourhood level, as applicable.",
+        "12": "Projected changes in location of vulnerable populations"
+      },
+      "4": {
+        "name": "Public health systems",
+        "1": "Adequate access to quality healthcare",
+        "2": "Emergency medical care",
+        "3": "Effective emergency response services",
+        "4": "Robust public health systems",
+        "5": "Security services: fire services, police stations, etc.;"
+      }
+    },
+    "physical": {
+      "name": "PHYSICAL",
+      "1": {
+        "name": "Communication",
+        "1": "Communication: radio/TV station, cell phone towers and existing telecommunication infrastructure",
+        "2": "Reliable communications technology"
+      },
+      "2": {
+        "name": "Ecosystem Services",
+        "1": "Integration of green and blue infrastructure into city policy and projects",
+        "2": "Natural elements, mangrove, hills, rivers, plantations, among others"
+      },
+      "3": {
+        "name": "Governance",
+        "1": "Secure technology networks",
+        "2": "City boundaries and sub-municipal boundaries (e.g., districts, wards)"
+      },
+      "4": {
+        "name": "Land Use",
+        "1": "(identify, as appropriate)industrial areas, agricultural areas, environmentally sensitive areas, main public spaces (e.g. public squares, parks, sport and recreation facilities, etc.), other relevant land uses"
+      },
+      "5": {
+        "name": "Major infrastructure",
+        "1": "Major infrastructure: water supply, sanitation and sewerage, roads, highways, bridges, ports, power supply, among others",
+        "2": "Critical infrastructure: mapping, planning and protection strategies",
+        "3": "Infrastructure and services damaged",
+        "4": "Protective infrastructure: well-designed and well-built based on risk information",
+        "5": "Water - potable and Sanitation, Energy, Transport, Communications, Health care: ensured minimal provision for \"most severe\" disaster scenario",
+        "6": "Major roads",
+        "7": "Transportation: main roads, bus station, airport, train station & rail tracks, etc.;",
+        "8": "Water, sanitation and energy: primary drainage network, main water tanks/water storage facilities, wastewater treatment infrastructure, etc.;"
+      },
+      "6": {
+        "name": "Major Infrastructure & Planning Resilience",
+        "1": "Diligent maintenance & continuity",
+        "2": "Flexible infrastructure services",
+        "3": "Retained spare capacity"
+      },
+      "7": {
+        "name": "Planning for risk and disaster",
+        "1": "Housing destroyed and damaged",
+        "2": "Affected areas",
+        "3": "Topography: elevation, water bodies",
+        "4": "Hazard mapping and monitoring (common awareness)",
+        "5": "Shared understanding of infrastructure risk (authorities, utility providers, infrastructure management)",
+        "6": "Hazard mapping and monitoring (clear and regular mapping)",
+        "7": "Hazard mitigation infrastructure, including location of sea walls, dikes, retention ponds",
+        "8": "Identification of cascading effects",
+        "9": "Areas of your city that were affected by natural hazards in the past, such as floods, strong winds, fire, erosion, landslides, etc.",
+        "10": "Changes in intensity, frequency, and location of hazards based on hazard modeling"
+      },
+      "8": {
+        "name": "Planning Resilience",
+        "1": "% of education structures at risk of damage from \"most probable\" and \"most severe\" scenarios",
+        "2": "Adequate continuity for critical assets & services",
+        "3": "Comprehensive hazard monitoring and risk assessment",
+        "4": "First responder equipment, with military or civilian back up",
+        "5": "Food, shelter, staple goods and fuel to respond to emergency of disaster scenarios",
+        "6": "Vulnerability and risk",
+        "7": "Diverse and affordable transport networks"
+      }
+    },
+    "capacities": {
+      "Robustness": "Robustness",
+      "Redundancy": "Redundancy",
+      "Diversity": "Diversity",
+      "Integration": "Integration",
+      "Transparency": "Transparency",
+      "Resourcefulness": "Resourcefulness",
+      "Inclusiveness": "Inclusiveness",
+      "Reflectiveness": "Reflectiveness",
+      "Flexibility": "Flexibility"
+    },
+    "subtitle": {
+      "dimension": "Urban Dimensions",
+      "indicator": "Measuring Indicators",
+      "capacity": "Resilience Capacities"
+    }
+  },
+  "initialIndicators": {
+    "name": "Urban Resilience",
+    "social": {
+      "name": "SOCIAL",
+      "1": {
+        "name": "Basic necessities",
+        "1": {
+          "name": "Safe and affordable housing",
+          "questions": {
+            "1": {
+              "text": "To what extent does the city have an adequate supply of safe and affordable housing?",
+              "score 0": "There is an acute shortage of affordable housing in the city. People lack security of tenure and property rights are not acceptable. There are large parts of the city where informal (unplanned) settlements have established unsuitable to live in.",
+              "score 1": "20 - 40% level of service (incl. Quality)",
+              "score 2": "40 - 60% level of service (incl. Quality)",
+              "score 3": "The city's supply of affordable housing is able to meet demand. This housing meets the requirements of residents (in terms of space and quality). There is an effective funding model to provide safe housing to the poor. There are incentives and affordable financing mechanisms available within the city to help upgrade the standard of existing housing stock so that it is better able to cope with predicted stresses and hazards. Land and property rights and rental regulation provide city residents with security. Programmes exist to legitimise informal settlements, in support of some of the city's poorest citizens."
+            },
+            "2": {
+              "text": "To what extent is the city's housing stock safe to live in?",
+              "score 0": "There is a lack of housing standards and regulation. Specific building codes do not exist and construction / upgrade advice to owners and renters is non-existent. Some disaster-prone areas within the city have a high residential population. There are large parts of the city where a significant proportion of residential dwellings are likely to be poorly constructed. Tenure of land in many parts of the city is unclear.",
+              "score 1": "20 - 40% level of service (incl. Quality)",
+              "score 2": "40 - 60% level of service (incl. Quality)",
+              "score 3": "The city's housing stock is controlled by well-designed and enforced codes, standards and regulations. Residential development in disaster-prone areas has been avoided and the city's residential neighbourhoods are located in areas where exposure to hazards is low. Information / training / support is provided to owners and renters giving advice on construction and repairs, including things to check and signs of damage, due to shock events or longer term structural stresses. Information is continually reviewed, updated and incorporated into city housing."
+            },
+            "3": {
+              "text": "To what extent are there mechanisms in place for effective planning for emergency shelter and temporary housing",
+              "score 0": "There are no mechanisms in place for effective planning for emergency shelter and temporary housing.",
+              "score 1": "20 - 40% level of service (incl. Quality)",
+              "score 2": "40 - 60% level of service (incl. Quality)",
+              "score 3": "There is an emergency housing plan for the city for times of emergency and/or housing is a consideration within the Major Incident Plans for the city. Plans exist which appropriately consider the need for shelter at various stages of a disaster including immediate short-term shelter and medium-long-term replacement housing. Plans consider not just the accommodation but also the facilities and staff required for these premises to be run effectively. The Housing Plan is a considered, well-transitioned process able to meet the potential impact of local hazards and subsequent demand from the city population."
+            }
+          }
+        },
+        "2": {
+          "name": "Effective sanitation",
+          "questions": {
+            "1": {
+              "text": "To what extent is there currently safe, reliable and affordable sanitation provided to all areas of the city",
+              "score 0": "The majority of households in extensive areas have no access to sanitation. Failure of existing sanitation infrastructure is common. No standards for sanitation exist. No regulatory body exists to oversee enforcement of sanitation regulations and standards.",
+              "score 1": "20 - 40% level of service (incl. Quality)",
+              "score 2": "40 - 60% level of service (incl. Quality)",
+              "score 3": "All households in all parts of the city are connected to reliably safe sewage network (i.e. not septic tanks) with safety procedures in place to prevent failures. Sanitation regulations and standards exist and are stringently enforced, with non-compliance occurring very rarely."
+            },
+            "2": {
+              "text": "To what extent is there an emergency plan in the event that the sanitation system is disrupted and/or there is a surge in wastewater requiring treatment",
+              "score 0": "There are no plans in place to maintain adequate levels of sanitation in the event that there is a major disruption to the sanitation network or a surge in wastewater requiring treatment.",
+              "score 1": "20 - 40% level of service (incl. Quality)",
+              "score 2": "40 - 60% level of service (incl. Quality)",
+              "score 3": "Robust contingency arrangements / plans exist outlining actions and responsibilities, including alternative sanitation arrangements. Actions are communicated to citizens. Planning ensures overall sanitation system can manage disruption."
+            }
+          }
+        },
+        "3": {
+          "name": "Inclusive access to safe drinking water",
+          "questions": {
+            "1": {
+              "text": "To what extent is there a safe, reliable and affordable distribution of potable water to households across the city?",
+              "score 0": "The majority of households in extensive areas of the city are not connected to a reliably safe potable water supply. No water quality standards exist. No regulatory body exists to enforce water quality standards.",
+              "score 1": "20 - 40% level of service (incl. Quality)",
+              "score 2": "40 - 60% level of service (incl. Quality)",
+              "score 3": "All households in all parts of the city are connected to a well-regulated potable water supply with safety procedures in place to ensure stringent quality standards are met at all times."
+            },
+            "2": {
+              "text": "To what extent is there effective planning for alternative (back-up) water supplies?",
+              "score 0": "No mechanism for planning alternative water supplies. No plans in place for back-up supplies.",
+              "score 1": "20 - 40% level of service (incl. Quality)",
+              "score 2": "40 - 60% level of service (incl. Quality)",
+              "score 3": "There are contingency plans for the city that identify how potable water will be distributed in case of a major event or extreme disruption. Well developed mechanisms are in place to provide back-up water supplies to residents, particularly including vulnerable populations, during emergencies. Plans based on accurate, up-to-date data. Mechanisms in place to regularly review and update planning."
+            }
+          }
+        },
+        "4": {
+          "name": "Sufficient affordable food supply",
+          "questions": {
+            "1": {
+              "text": "To what extent are adequate and nutritious food supplies affordable for all households?",
+              "score 0": "It is increasingly difficult for households to access good quality food at affordable prices. Prices of basic food commodities have been subject to large fluctuations in recent years and have become less affordable. The price of the city's main food staples is highly dependent on economic or political variables and there has been significant fluctuation in cost of these commodities in recent years.",
+              "score 1": "20 - 40% level of service (incl. Quality)",
+              "score 2": "40 - 60% level of service (incl. Quality)",
+              "score 3": "The city has a secure, nutritious food supply that is little influenced by economic or political variables. There has been little/no fluctuation in the price of basic food commodities over the recent years. All households are able to access good quality, nutritious food at affordable prices. The city has implemented initiatives to increase production of food within city boundaries"
+            },
+            "2": {
+              "text": "To what extent are there adequate and nutritious food supplies that are geographically accessible to households?",
+              "score 0": "Many households have very limited or no access to outlets that provide adequate, fresh and nutritious foods (e.g. because there is an absence of markets or supermarkets in certain neighbourhoods).",
+              "score 1": "20 - 40% level of service (incl. Quality)",
+              "score 2": "40 - 60% level of service (incl. Quality)",
+              "score 3": "Initiatives have been implemented to assess the extent to which good quality, nutritious food is physically accessible to households across the city. The city has no neighbourhoods that could be described as 'food deserts' (i.e. no reasonable access to markets, supermarkets or other retail outlets that sell fresh, nutritious food at reasonable prices). All households have good access to outlets that sell adequate, fresh and nutritious foods at reasonable prices."
+            },
+            "3": {
+              "text": "To what extent are there mechanisms in place to ensure continuity of essential food supplies in an emergency and during times of stress (e.g., imports from major source of supply are disrupted / stopped)",
+              "score 0": "There are no contingency plans for the city that identify how essential food supplies will be secured in case of a major event or extreme disruption. There are no initiatives or plans to increase security of supply of important foodstuffs.",
+              "score 1": "20 - 40% level of service (incl. Quality)",
+              "score 2": "40 - 60% level of service (incl. Quality)",
+              "score 3": "There are contingency plans for the city that identify how essential food supplies will be secured for households in case of a major event or extreme disruption. Plans based on accurate, up-to-date data. Mechanisms in place to regularly review and update planning. There are effective initiatives and plans in place to increase security of supply of important foodstuffs."
+            }
+          }
+        }
+      },
+      "2": {
+        "name": "Community support",
+        "1": {
+          "name": "Grassroots or community organizations participating in pre-event planning and post event response",
+          "questions": {
+            "1": {
+              "text": "Are grassroots or community organizations participating in pre-event planning and post event response for each neighbourhood in the city? ",
+              "score 0": "There is very little involvement from grassroots organizations in the city.",
+              "score 1": "There is awareness amongst key grassroots organizations of the importance of Disaster Risk Reduction, they support with awareness raising but not with active participation around response or planning.",
+              "score 2": "There is involvement in diverse grassroots organizations, either in some locations, or in some aspect of the planning or response, but it is it not comprehensive.",
+              "score 3": "Community organizations that cover a significant proportion of the city's population are actively participating in pre-event planning and post-event response right across the city."
+            }
+          }
+        }
+      },
+      "3": {
+        "name": "Planning Resilience",
+        "1": {
+          "name": "Public education towards awareness of hazard, risk and disaster information",
+          "questions": {
+            "1": {
+              "text": "Do health and education facilities in the city have enough qualified personnel?",
+              "score 0": "Most of the health and education facilities do not have enough qualified personnel",
+              "score 1": "Few health and education facilities have enough qualified personnel",
+              "score 2": "The majority of health and education facilities have enough qualified personnel",
+              "score 3": "Yes, all health and education facilities have enough qualified personnel"
+            },
+            "2": {
+              "text": "Are health and education facilities designed according to the principles of adaptive architecture, and as such adequately built and prepared to withstand the impacts of natural hazards?",
+              "score 0": "There is almost no consideration of the principles of adaptive architecture in the design of these facilities",
+              "score 1": "Few of them are designed according to principles of adaptive architecture",
+              "score 2": "Most of them are designed according to principles of adaptive architecture",
+              "score 3": "Yes, all of them are designed according to principles of adaptive architecture"
+            },
+            "3": {
+              "text": "Are health and education facilities strategically used as safe havens in case of a natural hazards?",
+              "score 0": "There is still no strategy in place for using these facilities as safe havens in case of a natural hazard",
+              "score 1": "Very few facilities are used as safe havens",
+              "score 2": "Some of these facilities are used as safe havens, but there is room for improvement",
+              "score 3": "Yes, these facilities are used as safe havens in case of a natural hazard, as part of existing disaster risk management strategies "
+            },
+            "4": {
+              "text": "Do you think health and education facilities are organized to ensure continuity of their services in case of a disaster?",
+              "score 0": "There are still no mechanisms in place to that effect in the city",
+              "score 1": "There are very few facilities which would be able to continue functioning in case of a disaster",
+              "score 2": "There are some mechanisms in place to that effect, but they do not always work effectively in case of a disaster",
+              "score 3": "Yes, there are contingency mechanisms in place which effectively ensure the continuity of their functions in case of a disaster"
+            },
+            "5": {
+              "text": "Does a co-ordinated public relations and education campaign exist, with structured messaging and channels to ensure hazard, risk and disaster information (that can be understood and used) is properly disseminated to the public?",
+              "score 0": "Systems for disseminating critical information on disaster risk are wholly inadequate.",
+              "score 1": "Some useful programmes / channels exist for disseminating hazard, risk and disaster information, but there is significant room for improvement to reach a greater proportion of the public. 25% of the city population is reached.",
+              "score 2": "Campaigns and programmes (PR and education) exist to ensure proper dissemination of hazard, risk and disaster information. Key messages reach over 50% of the city population.",
+              "score 3": "Fully co-ordinated campaigns and programmes (PR and education) exist to ensure proper dissemination of hazard, risk and disaster information. Key messages reach over 75% of the city population."
+            }
+          }
+        },
+        "2": {
+          "name": "Risk and resilience training to all sectors of the city including government, business, NGOs and community",
+          "questions": {
+            "1": {
+              "text": "Are there training courses covering risk and resilience issues offered to all sectors of the city including government, business, NGOs and community?",
+              "score 0": "Little or no relevant training exists that is tailored for the city.",
+              "score 1": "Some training modules are available. Coverage and content needs to be significantly improved.",
+              "score 2": "The city has a track record of delivering resilience training to some sectors, but other sectors lack training and engagement.",
+              "score 3": "There are training courses covering risk, resilience and disaster response offered across all sectors of the city including government, business, NGO's and community?"
+            }
+          }
+        },
+        "3": {
+          "name": "Awareness of equipment and supply needed + provision",
+          "questions": {
+            "1": {
+              "text": "Will there be sufficient first responder equipment, with military or civilian back up as required?",
+              "score 0": "Significant gaps in ability to meet needs even under “most likely” scenario.",
+              "score 1": "Assets will meet basic needs under “most severe” scenario, but gaps are known to exist.",
+              "score 2": "Equipment levels and assets have either been modelled or proven to be adequate in practice to deal with a “most severe” scenario, although this relies on mutual aid arrangements. Mutual aid agreements are tested for likelihood of being affected by the same disaster.",
+              "score 3": "Equipment levels and assets have either been modelled or proven to be adequate in practice to deal with a “most severe” scenario."
+            }
+          }
+        }
+      }
+    },
+    "economic": {
+      "name": "ECO-\nNOMIC",
+      "1": {
+        "name": "Economic Impact",
+        "1": {
+          "name": "Businesses with a documented business continuity plan",
+          "questions": {
+            "1": {
+              "text": "What proportion of businesses have a documented business continuity plan that has been reviewed within the last 18 months?",
+              "score 0": "Under 20%.",
+              "score 1": "20 - 40% businesses.",
+              "score 2": "40 - 60% businesses.",
+              "score 3": "60 - 100% businesses."
+            }
+          }
+        },
+        "2": {
+          "name": "Knowledge to funding opportunities (for local economy and recovery)",
+          "questions": {
+            "1": {
+              "text": "The city / lead agencies understand all sources of funding, and the “resilience dividends”, are well connected, understand all available routes to attract external funding and are actively pursuing funds for major resilience investments.",
+              "score 0": "There is little understanding / awareness of available sources of funding for DRR.",
+              "score 1": "There is some visibility of routes of funding, but picture is incomplete and little is done to pursue these funds.",
+              "score 2": "The city is aware of numerous routes to secure funding for DRR activities and is actively pursuing a range of these.",
+              "score 3": "The city understands all routes to secure funding for DRR activities, is actively pursuing a range of these and has had some success."
+            }
+          }
+        }
+      },
+      "2": {
+        "name": "Planning Resilience",
+        "1": {
+          "name": "Financial plan and budget for resilience, including contingency funds",
+          "questions": {
+            "1": {
+              "text": "Does the city have in place a specific 'ring fenced' (protected) budget, the necessary resources and contingency fund arrangements for local disaster risk reduction (mitigation, prevention, response and recovery)?",
+              "score 0": "No clear plan.",
+              "score 1": "There are some plans in different agencies / organizations but they are not co-ordinated.",
+              "score 2": "The city financial plan allows for DRR activities, budgets are ring fenced.",
+              "score 3": "The city financial plan is comprehensive in relation to DRR, budgets are ring fenced and contingency plans are in place."
+            }
+          }
+        }
+      }
+    },
+    "institutional": {
+      "name": "INSTI-\nTUTIONAL",
+      "1": {
+        "name": "Governance",
+        "1": {
+          "name": "Disaster management authority have sufficient staffing capacity",
+          "questions": {
+            "1": {
+              "text": "Does the responsible disaster management authority have sufficient staffing capacity to support first responder duties in surge event scenario?",
+              "score 0": "No surge capacity identified.",
+              "score 1": "Coverage of all neighbourhoods within 48-72 hours.",
+              "score 2": "Coverage of all neighbourhoods within 24-48 hours.",
+              "score 3": "Surge capacity exists and is tested either via actual events or practice drills for disaster and risk scenarios for current and foreseen risks coverage of all neighbourhoods will be possible within 4 hours."
+            }
+          }
+        }
+      },
+      "2": {
+        "name": "Planning for risk and disaster",
+        "1": {
+          "name": "Early warning system and reaching level",
+          "questions": {
+            "1": {
+              "text": "Length and reliability of warning - enabling practical action to be taken.",
+              "score 0": "Less than half of the population is reachable by early warning system.",
+              "score 1": "Estimated that more than half of the population is reachable by early warning system.",
+              "score 2": "Estimated that over 75% of the population is reachable by early warning system.",
+              "score 3": "Estimated that over 90% of the population is reachable by early warning system."
+            }
+          }
+        }
+      },
+      "3": {
+        "name": "Public health systems",
+        "1": {
+          "name": "Adequate access to quality healthcare",
+          "questions": {
+            "1": {
+              "text": "To what extent do general healthcare services operate within capacity at all times and provide adequate and affordable healthcare to all?",
+              "score 0": "There are no mechanisms in place to ensure that general healthcare services across the city are affordable for all. Some population groups find it hard to access affordable healthcare. Staff shortages are very common within general healthcare services across the city and there are severe shortages of skilled and motivated healthcare practitioners within the city. There is no spare capacity, and no mechanisms in place to draft in additional resources, to cope with surges in demand (e.g., during an epidemic or extreme weather conditions), and there is typically a significant negative impact on the health outcomes of patients seeking treatment from healthcare services at these time.",
+              "score 1": "20 - 40% level of service (incl. Quality)",
+              "score 2": "40 - 60% level of service (incl. Quality)",
+              "score 3": "General healthcare services are accessible for all and there are mechanisms in place to ensure it is affordable for all. No population groups find it hard to access affordable healthcare. Staff shortages are rare within general healthcare services across the city and there are adequate resources of qualified, skilled, motivated healthcare practitioners within the city. There are mechanisms in place to ensure that the system is able to cope with surges in demand (e.g., during an epidemic or extreme weather conditions) and there is typically no significant negative impact on the health outcomes of patients seeking treatment from healthcare services at these times."
+            },
+            "2": {
+              "text": "To what extent is effective maternal care and family planning available and affordable to all?",
+              "score 0": "Maternal care, family planning education, facilities and resources are severely under-funded and are not readily available or are unaffordable to many within the city. Minority and vulnerable groups are frequently unable to access these services.",
+              "score 1": "20 - 40% level of service (incl. Quality)",
+              "score 2": "40 - 60% level of service (incl. Quality)",
+              "score 3": "Maternal care, family planning education, facilities and resources are well-funded, widely available and free at the point of service. Specific initiatives to reach minority and vulnerable groups are in place. Good level of professional healthcare and support provided to mother and baby during and after pregnancy."
+            },
+            "3": {
+              "text": "To what extent are healthcare services for non-communicable diseases (NCDs) available and affordable to all?",
+              "score 0": "There is a lack of quality facilities and personnel to NCDs. Resources are stretched and people are not getting access to appropriate and affordable treatment in a timely fashion. There is a lack of specialist treatment within the city for key NCDs such as cancer, cardiovascular issues, respiratory issues, diabetes, kidney problems etc.",
+              "score 1": "20 - 40% level of service (incl. Quality)",
+              "score 2": "40 - 60% level of service (incl. Quality)",
+              "score 3": "There are quality, well-funded facilities and personnel to manage NCD cases within the city. People receive timely, affordable and quality treatment. Specialist units, facilities and experts exist for specific NCDs such as cancer, cardiovascular issues, respiratory issues, diabetes, kidney problems etc."
+            },
+            "4": {
+              "text": "To what extent are mental healthcare services affordable and accessible to all?",
+              "score 0": "Mental health services are severely under-resourced within the city and are unable to meet demand for these services. There is a severe shortage of health and psychological support available for: • Victims of crime and violence • Immigrants • Addiction patients The city’s emergency planning does not consider a surge in demand for mental health support post-shock.",
+              "score 1": "20 - 40% level of service (incl. Quality)",
+              "score 2": "40 - 60% level of service (incl. Quality)",
+              "score 3": "There are free mental health services available within the city and they are accessible to all. There is sufficient health and psychological support available for: • Victims of crime and violence • Immigrants • Addiction patients Additionally, the city’s emergency planning has considered a surge in demand for mental health support post-shock."
+            }
+          }
+        },
+        "2": {
+          "name": "Emergency medical care",
+          "questions": {
+            "1": {
+              "text": "To what extent are emergency medical services adequately resourced to deal with major events?",
+              "score 0": "There are very few emergency medical facilities across the city. These are not effectively distributed spatially. There are not enough emergency physicians (surgeons, doctors) and nurses to deal with surges in causalities from major incidents. There are no agreements with neighbouring hospitals to accept certain casualties in a major incident.",
+              "score 1": "20 - 40% level of service (incl. Quality)",
+              "score 2": "40 - 60% level of service (incl. Quality)",
+              "score 3": "There is a good distribution of well-resourced emergency medical facilities across the city meaning all citizens are within appropriate proximity of a hospital. There are enough emergency physicians and nurses to deal with surges in causalities from major incidents. There are sufficient specialist skills / training within this pool of staff to deal with specialist emergency cases (e.g., burns, pandemic cases) and appropriate medical equipment and facilities. There are formal arrangements between networks of hospitals and health organisations (including NGOs) to help manage surge incidents."
+            },
+            "2": {
+              "text": "To what extent are emergency medical services adequately prepared to deal with major events?",
+              "score 0": "Emergency planning within the healthcare system to deal with major events is non-existent or severely limited. There is no city-wide plan for co-ordinating medical resources following a major event. Roles and responsibilities for dealing with a major event have not been defined. Disaster preparedness drills are rarely, if ever, undertaken at the individual facility level or the city-wide level.",
+              "score 1": "20 - 40% level of service (incl. Quality)",
+              "score 2": "40 - 60% level of service (incl. Quality)",
+              "score 3": "There is effective, integrated emergency planning within the healthcare system to deal with major events. All emergency medical facilities have business continuity plans in place and plans for dealing with major disasters. A city-wide plan exists for co-ordinating medical resources following a major event and roles and responsibilities are clearly defined within this. Disaster preparedness drills are routinely undertaken at the individual facility level (at least annually) and the city-wide level (at least every 3 years)."
+            }
+          }
+        },
+        "3": {
+          "name": "Effective emergency response services",
+          "questions": {
+            "1": {
+              "text": "To what extent are the ambulance service adequately trained and resourced to effectively respond to call-outs?",
+              "score 0": "Paramedics / ambulance services operate below maximum capacity at all times and are able to respond to 100% of day-to-day call-outs. There are always sufficient paramedics to respond to incidents relating to health (ambulance). There is a robust call-out system to receive and process public emergency calls. Paramedics / emergency health responders have adequate capacity and/or arrangements to manage surges in the number of incidents. They are well trained, equipped and regulated. They are also prepared and equipped to deal with specific large scale emergencies that the city may face (e.g., earthquakes, terrorism etc.) ensuring that those effected can be located and assisted.",
+              "score 1": "20 - 40% level of service (incl. Quality)",
+              "score 2": "40 - 60% level of service (incl. Quality)",
+              "score 3": "There are no ambulance response services operating within the city or there is a severe capacity deficit in the city's everyday emergency response capability. This leaves it unable to effectively manage (everyday) health callouts. Paramedics / emergency health responders are not trained, equipped, generally prepared to respond to major incidents which may require specific expertise (e.g., earthquakes, terrorism etc.)., terrorism etc.)."
+            },
+            "2": {
+              "text": "To what extent are the fire services adequately trained and resourced to effectively respond to call-outs?",
+              "score 0": "There are no fire response services operating within the city or there is a severe capacity deficit in the city's everyday emergency response capability. This leaves it unable to effectively manage (everyday) fire incidents. Firefighters are not trained, equipped, generally prepared to respond to major incidents which may require specific expertise (e.g., earthquakes, terrorism etc.).",
+              "score 1": "20 - 40% level of service (incl. Quality)",
+              "score 2": "40 - 60% level of service (incl. Quality)",
+              "score 3": "Fire response services operate below maximum capacity at all times and are able to respond to 100% of day-to-day call-outs. There are always sufficient firefighters to respond to fire incidents. There is a robust call out system to receive and process public emergency calls. Firefighters have surplus capacity and/or arrangements to manage surges in the number of incidents. They are well trained, equipped and regulated. They are also prepared and equipped to deal with specific large scale emergencies that the city may face (e.g., earthquakes, terrorism etc.) ensuring that those effected can be located and assisted."
+            },
+            "3": {
+              "text": "To what extent are police adequately trained and resourced to effectively respond to call-outs?",
+              "score 0": "There are no police response services operating within the city or there is a severe capacity deficit in the city's everyday emergency response capability. This leaves it unable to effectively manage (everyday) incidents relating to law and order (police response). Police are not trained, equipped, generally prepared to respond to major incidents which may require specific expertise (e.g., earthquakes, terrorism etc.).",
+              "score 1": "20 - 40% level of service (incl. Quality)",
+              "score 2": "40 - 60% level of service (incl. Quality)",
+              "score 3": "Police response services operate below maximum capacity at all times and are able to respond to 100% of day-to-day call-outs. There are always sufficient police to respond to incidents relating to law and order (e.g., police). There is a robust call-out system to receive and process public emergency calls. Police have surplus capacity and/or arrangements to manage surges in the number of incidents. They are well trained, equipped and regulated. They are also prepared and equipped to deal with specific large scale emergencies that the city may face (e.g., earthquakes, terrorism etc.) ensuring that those effected can be located and assisted."
+            },
+            "4": {
+              "text": "To what extent is there an adequately trained, resourced and coordinated official emergency response to manage major incidents and the immediate aftermath of disasters?",
+              "score 0": "There is no emergency response and search and rescue capacity within the city and none available for deployment within the city from regional or national sources if required. It is unable to provide immediate response to major incidents / emergencies.",
+              "score 1": "20 - 40% level of service (incl. Quality)",
+              "score 2": "40 - 60% level of service (incl. Quality)",
+              "score 3": "Emergency responders (police, fire, ambulance etc.) are trained, equipped and coordinated to manage major incidents (e.g., earthquakes, terrorism etc.). Search and Rescue capability exists with robust strategic arrangements to utilise assets such as the military, NGOs or other trained volunteers as appropriate, Response teams are equipped to meet the needs of all high risk disaster scenarios. This includes any specialist equipment and training (e.g., response to hazardous materials). The city has undertaken a detailed inventory of the full set of response assets both within the city's direct control as well as assets outside its control (i.e. controlled by the private sector or other government body). The inventory is based on accurate, up-to-date data. Mechanisms are in place to regularly review and update the inventory. Responders receive regular training in disaster management/ search and rescue (at least once per year)."
+            },
+            "5": {
+              "text": "To what extent does city have mechanisms in place to mobilise critical non-financial resources (people, equipment) for providing emergency response and staple goods for subsequent relief (i.e. food and basic necessities) after a disaster event?",
+              "score 0": "There are no city-wide emergency plans in place that incorporate planning for emergency resource accessibility. No mechanism to mobilise critical non-financial resources. The city has not undertaken an inventory of assets. OR The city has undertaken an inventory, but the inventory was incomplete (i.e., did not include assets outside of direct city control) or is out of date. No mechanism to establish agreements to utilise critical assets / supplies that are not within direct city controls during times of need.",
+              "score 1": "20 - 40% level of service (incl. Quality)",
+              "score 2": "40 - 60% level of service (incl. Quality)",
+              "score 3": "There are city-wide mechanisms in place that address emergency resource accessibility. The city has undertaken a detailed inventory of the full set of relief assets both within the city's direct control as well as assets outside its control (i.e. controlled by the private sector or other government body). The inventory is based on accurate, up-to-date data. Mechanisms are in place to regularly review and update the inventory. This includes emergency relief (food, shelter, water etc.). It addresses logistics including use of distribution teams and vehicles to manage demand. Responders and volunteers are all effectively trained and coordinated to ensure the immediate needs of those affected by a disaster can be met. Resource preparation / planning reflects the worst-case scenario potential of the city's risk profile."
+            }
+          }
+        }
+      }
+    },
+    "physical": {
+      "name": "PHYSICAL",
+      "1": {
+        "name": "Major infrastructure",
+        "1": {
+          "name": "Major infrastructure: water supply, sanitation and sewerage, roads, highways, bridges, ports, power supply, among others",
+          "questions": {
+            "1": {
+              "text": "does the city administration or other planning agencies developed, released, and updated a city baseline map or maps for the following topics: water supply, sanitation and sewerage, roads, highways, bridges, ports, power supply, or other topics of similar nature and relevance?",
+              "score 0": "None of the topics have been gathered in a map format nor contain the latest (current) status",
+              "score 1": "Partially, only some topics are available and up to date",
+              "score 2": "Yes, mostly up dated but not integrated; some topics are missing or not available, or not up-to-date",
+              "score 3": "Yes, for all of them and are regularly updated"
+            }
+          }
+        },
+        "2": {
+          "name": "Critical infrastructure: mapping, planning and protection strategies",
+          "questions": {
+            "1": {
+              "text": "critical infrastructure: mapping, planning and protection strategies",
+              "score 0": "There are no plans or forums. Critical infrastructure risks are not well understood in the city.",
+              "score 1": "Risks are understood for some but not all of the major infrastructure types.",
+              "score 2": "There is a critical infrastructure forum or other means to establish a shared understanding of risks between the city and various utility providers upon the points of stress on the system / risks at the city scale?",
+              "score 3": "The city owns and implements (in collaboration with other stakeholders) a critical infrastructure plan or strategy to protect its critical infrastructure, utilities and services. The strategy highlights risks / stresses and includes continuity plans for essential services."
+            }
+          }
+        },
+        "3": {
+          "name": "Water, sanitation and energy: primary drainage network, main water tanks/water storage facilities, wastewater treatment infrastructure, etc.;",
+          "questions": {
+            "1": {
+              "text": "To the best of your knowledge, are there enough water storage facilities which are safe in case of an emergency?",
+              "score 0": "There are almost no safe water storage facilities in case of an emergency",
+              "score 1": "There are few safe water storage facilities in the city",
+              "score 2": "There are some water storage facilities that provide the majority of the population with drinking water and that are safe in case of an emergency",
+              "score 3": "Yes, there are enough water storage facilities to withstand the period of a flood or drought, and they are safely located (e.g. elevated, withstanding strong storms, etc.)"
+            },
+            "2": {
+              "text": "To the best of your knowledge, are existing drainage and sanitation facilities (e.g. drainage channels, latrines, toilets, wastewater management facilities, sewerage system) adequately designed to withstand heavy rains or flooding?",
+              "score 0": "There are almost no drainage and sanitation facilities designed for such a purpose in the city",
+              "score 1": "There are few neighbourhoods of the city that are equipped with such drainage and sanitation facilities, but they cannot withstand heavy rains or flooding",
+              "score 2": "There are some neighbourhoods of the city that are equipped with such drainage and sanitation facilities, and they work reasonably well in case of heavy rains or flooding",
+              "score 3": "Yes, most of the city is equipped with drainage and sanitation facilities that were designed for such a purpose, and they work well in case of heavy rains or flooding"
+            },
+            "3": {
+              "text": "Are there tax collection mechanisms in place in your city to finance basic service delivery (e.g. water, sanitation, solid waste management) and drainage/road maintenance?",
+              "score 0": "There are no effective tax collection mechanisms in place for this purpose in the city",
+              "score 1": "There are tax collection mechanisms in place, but these only enable basic service delivery and drainage/road maintenance in one or two neighbourhoods of the city",
+              "score 2": "There are tax collection mechanisms in place which enable basic service delivery and drainage/road maintenance in some parts of the city",
+              "score 3": "Yes, there are effective tax collection mechanisms in place to adequately finance basic service delivery and drainage/road maintenance in most parts of the city"
+            }
+          }
+        }
+      },
+      "2": {
+        "name": "Planning for risk and disaster",
+        "1": {
+          "name": "Housing destroyed and damaged",
+          "questions": {
+            "1": {
+              "text": "Is there an updated and contrasted register of damaged housing stock (public and privately owned)?",
+              "score 0": "No such activites have been carried-away or there are no updates, no quality of information is not reliable",
+              "score 1": "<50% registered, updated and confirmed",
+              "score 2": ">50% registered, updated and confirmed",
+              "score 3": "100% registered, updated and confirmed"
+            }
+          }
+        }
+      },
+      "3": {
+        "name": "Planning Resilience",
+        "1": {
+          "name": "% of education structures at risk of damage from \"most probable\" and \"most severe\" scenarios",
+          "questions": {
+            "1": {
+              "text": "% of education structures at risk of damage from “most probable” and “most severe” scenarios",
+              "score 0": ">15% of teaching facilities at risk in “most probable” scenario.",
+              "score 1": "5-10% of teaching facilities at risk in “most probable” scenario.",
+              "score 2": "No teaching facilities at risk in “most probable” scenario.",
+              "score 3": "No teaching facilities at risk in “most severe” scenario."
+            }
+          }
+        }
+      }
+    }
+  },
+  "vulnerability": {
+    "selectLabel": "select coloring property",
+    "properties": {
+      "region": "Region",
+      "district of region": "District of region",
+      "hromada (territorial community)_1": "Hromada (territorial community)_1",
+      "city": "City",
+      "city status": "City status",
+      "city_area": "City area, sq. km",
+      "males, %": "Males, %",
+      "females, %": "Females, %",
+      "0_17 age, %": "0_17 age, %",
+      "18_44 age, %": "18_44 age, %",
+      "45_60 age, %": "45_60 age, %",
+      "61_64 age, %": "61_64 age, %",
+      "65+ age,  %": "65+ age,  %",
+      "median monthly income per person, uah": "Median monthly income per person, uah",
+      "is the city was under occupation?": "Is the city was under occupation?",
+      "active hostilities / occupied territory": "Active hostilities / occupied territory",
+      "number of alarms in the region in 2024": "Number of alarms in the region in 2024",
+      "duration of alarms, hours in 2024": "Duration of alarms, hours in 2024",
+      "number of alarms in the region in 2024 / per day": "Number of alarms in the region in 2024 / per day",
+      "num_idps_oblast": "Number of IDPs in the Oblast",
+      "population_2022": "Population in city (census 2022)",
+      "number of idps_1": "Number of IDPs at the city level",
+      "working_age individuals unemployment rate, %": "Unemployment of the working-age population in the city",
+      "distance from the border with rf / rb / front line": "Distance from city to conflict zone or under enemy control"
+    }
+  }
+}
