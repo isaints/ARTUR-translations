@@ -1,3 +1,3 @@
 # ARTUR-translations
 
-You need to edit the ua.json file with the ua_corrections.json file. and the en.json is just for looking up if you don't understand the text. the keys and values in ua_corrections.json are not perfectly fit for the ua.json and en.json, becuase the version of ua_corrections is older. So you need to be careful to compare the differences.
+You need to edit the ua.json file with the ua_corrections.json file. en.json is just a lookup for when you don't understand the text. ua_corrections.json keys and values don't match exactly with ua.json and en.json because of the earlier version of ua_corrections. So you need to compare the differences carefully.
